@@ -72,31 +72,31 @@ struct RandomRequest {
 
 ```
 
-## Deployments
+## Example usage
 
-### Rinkeby
+### Sepolia Testnet
 
-v1.0.0
+v1.1.0
 
-address : 0xcfAac08133da18ba08C67099E97078A7481b4b25
+address : `0x79000355e5ccEF44dd8902bb181c4727f7BA9522`
 
-https://rinkeby.etherscan.io/address/0xcfaac08133da18ba08c67099e97078a7481b4b25#writeContract
+https://sepolia.etherscan.io/address/0x79000355e5ccEF44dd8902bb181c4727f7BA9522#writeContract
 
-The result of a random number request, which can be retrieved (after ~ 1-2 minutes) with `getScheduleRequest` looks like this (Example `diogo-project`) :
+The result of a random number request, which can be retrieved (after ~ 1-2 minutes) with `getScheduleRequest` looks like this (Example `sepolia-test-1`) :
 
 ```
 tuple :
-1650990852,
+1704282240,
 0,
-1651001918,
-54423112281306291934234953667440161079604364355717362941254251152604297243120,
-23389299283563471021862844393393757989412126785737161865551291403557344740065
+1704282288,
+100515050063606553729037864554752426137032236690245901376149353970738374593344,
+61070570061348262458333614887762206422997625810093439968080639269999029879031
 
 ```
 
-The last number in the struct is the random number which can by itself requested with `getRandomNumber` (Example `diogo-project`) :
+The last number in the struct is the random number which can by itself requested with `getRandomNumber` (Example `sepolia-test-1`) :
 
-`23389299283563471021862844393393757989412126785737161865551291403557344740065`
+`61070570061348262458333614887762206422997625810093439968080639269999029879031`
 
 ## Project Setup
 
