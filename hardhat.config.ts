@@ -33,7 +33,7 @@ const chainIds = {
   mainnet: 1,
   optimism: 10,
   polygon: 137,
-  rinkeby: 4,
+  sepolia: 11155111,
 };
 
 function getChainConfig(network: keyof typeof chainIds): NetworkUserConfig {
@@ -67,7 +67,7 @@ const config: HardhatUserConfig = {
       mainnet: process.env.ETHERSCAN_API_KEY || "",
       // optimisticEthereum: process.env.OPTIMISM_API_KEY,
       // polygon:     process.env.POLYGONSCAN_API_KEY,
-      rinkeby: process.env.ETHERSCAN_API_KEY || "",
+      sepolia: process.env.ETHERSCAN_API_KEY || "",
     },
   },
 
@@ -101,7 +101,7 @@ const config: HardhatUserConfig = {
     mainnet: getChainConfig("mainnet"),
     optimism: getChainConfig("optimism"),
     polygon: getChainConfig("polygon"),
-    rinkeby: getChainConfig("rinkeby"),
+    sepolia: getChainConfig("sepolia"),
   },
 
   paths: {

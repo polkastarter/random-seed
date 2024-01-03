@@ -17,20 +17,23 @@ contract RandomSeed is VRFConsumerBaseV2, AccessControl {
     // VRF coordinator. For other networks see ...
     // https://docs.chain.link/docs/vrf-contracts/#configurations
     // address public constant vrfCoordinator = 0x6168499c0cFfCaCD319c818142124B7A15E857ab; // Rinkeby
-    address public constant vrfCoordinator = 0x271682DEB8C4E0901D1a1550aD2e64D568E69909; // Eth mainnet
+    address public constant vrfCoordinator = 0x8103B0A8A00be2DDC778e6e7eaa21791Cd364625; // Sepolia
+    // address public constant vrfCoordinator = 0x271682DEB8C4E0901D1a1550aD2e64D568E69909; // Eth mainnet
 
     // LINK token contract. For other networks, see ...
     // https://docs.chain.link/docs/vrf-contracts/#configurations
     // address public constant link_token_contract = 0x01BE23585060835E02B77ef475b0Cc51aA1e0709; // Rinkeby
-    address public constant link_token_contract = 0x514910771AF9Ca656af840dff83E8264EcF986CA; // Eth mainnet
+    address public constant link_token_contract = 0x779877A7B0D9E8603169DdbD7836e478b4624789; // Sepolia
+    // address public constant link_token_contract = 0x514910771AF9Ca656af840dff83E8264EcF986CA; // Eth mainnet
 
     // The gas lane to use, which specifies the maximum gas price to bump to.
     // For a list of available gas lanes on each network,
     // see https://docs.chain.link/docs/vrf-contracts/#configurations
     // bytes32 public keyHash = 0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc; // Rinkeby
-    bytes32 public keyHash = 0x8af398995b04c28e9951adb9721ef74c74f93e6a478f39e7e0777be13527e7ef; // Eth mainnet  200 gwei
-    //  bytes32 public keyHash = 0xff8dedfbfa60af186cf3c830acbc32c05aae823045ae5ea7da1e45fbfaba4f92; // Eth mainnet  500 gwei
-    //  bytes32 public keyHash = 0x9fe0eebf5e446e3c998ec9bb19951541aee00bb90ea201ae456421a2ded86805; // Eth mainnet 1000 gwei
+    bytes32 public keyHash = 0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c; // Sepolia - 150 gwei Key Hash
+    // bytes32 public keyHash = 0x8af398995b04c28e9951adb9721ef74c74f93e6a478f39e7e0777be13527e7ef; // Eth mainnet  200 gwei
+    // bytes32 public keyHash = 0xff8dedfbfa60af186cf3c830acbc32c05aae823045ae5ea7da1e45fbfaba4f92; // Eth mainnet  500 gwei
+    // bytes32 public keyHash = 0x9fe0eebf5e446e3c998ec9bb19951541aee00bb90ea201ae456421a2ded86805; // Eth mainnet 1000 gwei
 
     // A reasonable default is 100000, but this value could be different
     // on other networks.

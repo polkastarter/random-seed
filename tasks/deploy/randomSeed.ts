@@ -1,12 +1,11 @@
+import type { RandomSeed } from "../../src/types/contracts/RandomSeed";
+import type { RandomSeed__factory } from "../../src/types/factories/contracts/RandomSeed__factory";
 import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
+import "@nomiclabs/hardhat-etherscan";
 import { task } from "hardhat/config";
 import type { TaskArguments } from "hardhat/types";
 
-import type { RandomSeed } from "../../src/types/RandomSeed";
-import type { RandomSeed__factory } from "../../src/types/factories/RandomSeed__factory";
-
-import "@nomiclabs/hardhat-etherscan";
-import { hardhatArguments } from "hardhat";
+// import { hardhatArguments } from "hardhat";
 
 const CONFIRMATION_BLOCKS_WAIT = 10; // actually ~1 minute or 5 blocks should be ok, but let's play it safe
 
